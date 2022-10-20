@@ -51,5 +51,58 @@ RSpec.describe "challenge" do
         expect(new_cat.provide).to eq "Cat fact: In one stride, a cheetah can cover 23 to 26 feet (7 to 8 meters)."
     end
 
-
 end
+
+####################################
+
+RSpec.describe Greeter do
+    it "greets the user" do
+      io = double :io
+      expect(io).to receive(:puts).with("What is your name?")
+      expect(io).to receive(:gets).and_return("Kay")
+      expect(io).to receive(:puts).with("Hello, Kay!")
+  
+      greeter = Greeter.new(io)
+      greeter.greet
+    end
+  end
+
+
+  ######################################
+
+  RSpec.describe "calculator" do
+    it "test 1" do
+        io = double :io
+        
+        expect(io).to receive(:puts).with("Hello. I will subtract two numbers.\nPlease enter a number").ordered
+        expect(io).to receive(:gets).and_return("10").ordered
+        expect(io).to receive(:puts).with("Please enter another number").ordered
+        expect(io).to receive(:gets).and_return("5").ordered
+        expect(io).to receive(:puts).with("Here is your result: 10 - 5 = 5").ordered
+        
+        testing = InteractiveCalculator.new(io)
+        testing.run
+        #expect(testing.run).to eq "Here is your result: 10 - 5 = 50"
+    end
+  end
+
+
+  ######################################
+
+  RSpec.describe "string repeater" do
+    it "test 6" do
+        
+        terminal = double :terminal
+
+        expect(terminal).to receive(:puts).with("Hello. I will repeat a string many times.\nPlease enter a string")
+        expect(terminal).to receive(:gets).and_return("Yum ")
+        expect(terminal).to receive(:puts).with("Please enter a number of repeats")
+        expect(terminal).to receive(:gets).and_return("4")
+        expect(terminal).to receive(:puts).with("Here is your result: Yum Yum Yum Yum ")
+
+        strrpt = StringRepeater.new(terminal)
+        strrpt.run
+        #expect(strrpt.run).to eq "Yum Yum Yum Yum "
+
+    end
+  end

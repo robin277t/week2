@@ -75,17 +75,71 @@ end
 #cats = CatFacts.new
 #p cats.provide
 
-=begin
-needed:
+##############################################
 
-curl that link to get data stream
+class Greeter
+    def initialize(io)
+      @io = io
+    end
+  
+    def greet
+      @io.puts "What is your name?"
+      name = @io.gets.chomp
+      @io.puts "Hello, #{name}!"
+    end
+  end
 
-create an initializer on the above class, with an argument that will then become
-a) the double in the test and 
-b) switched out for Net:HTTP
+ # g = Greeter.new(Kernel)
+ # g.greet
 
-in test the double needs to allow .get, and with the URI, and to return the data stream
+##########################################
 
-actual test is
-expect(new_cat.provide).to eq "whatever test here + fact"
-=end
+class InteractiveCalculator
+    def initialize(inputkernel)
+        @io = inputkernel
+    end
+
+    def run
+         @io.puts "Hello. I will subtract two numbers.\nPlease enter a number"
+         num1 = @io.gets.chomp.to_i
+         @io.puts "Please enter another number"
+         num2 = @io.gets.chomp.to_i
+         @io.puts "Here is your result: #{num1} - #{num2} = #{(num1 - num2)}"  
+         return "Here is your result: #{num1} - #{num2} = #{(num1 * num2)}" 
+    end
+end
+
+#interactive_calculator = InteractiveCalculator.new(Kernel)
+#interactive_calculator.run
+
+###############################
+
+
+
+# Hello. I will repeat a string many times.
+# Please enter a string
+# TWIX
+# Please enter a number of repeats
+# 10
+# Here is your result:
+# TWIXTWIXTWIXTWIXTWIXTWIXTWIXTWIXTWIXTWIX
+
+class StringRepeater
+    
+    def initialize(input)
+        @terminal_input = input
+    end
+
+    def run
+        @terminal_input.puts "Hello. I will repeat a string many times.\nPlease enter a string"
+        str = @terminal_input.gets.chomp
+        @terminal_input.puts "Please enter a number of repeats"
+        strcount = @terminal_input.gets.chomp.to_i
+        @terminal_input.puts "Here is your result: #{(str * strcount)}"
+        return str * strcount
+    end
+
+end 
+
+#string_repeater = StringRepeater.new(Kernel)
+#string_repeater.run
