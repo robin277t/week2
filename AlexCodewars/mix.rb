@@ -21,9 +21,10 @@ def mix(s1, s2)
     comparisons << final_string if final_string.length>3
   }
 
-comparisons.uniq.sort_by{|alph| -alph.chars[2]}.sort_by{|start| start.chars[0]}.sort_by{|len| -len.length}.join("/")
+#comparisons.uniq.sort_by{|alph| -alph.chars[2]}.sort_by{|startchar| startchar.chars[0]}.sort_by{|len| -len.length}.join("/")
 
-#TODO filter out 1 occurrences
+comparisons.uniq.sort_by{|all| [-all.length, all.chars[0], -all.chars[2]]}.join("/")
+
 end
 
 def split(string)
