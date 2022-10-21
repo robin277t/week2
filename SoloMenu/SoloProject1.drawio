@@ -1,1 +1,49 @@
-<mxfile host="app.diagrams.net" modified="2022-10-21T09:27:18.176Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="S4O9ZA8QXT-2-eof0gFi" version="20.4.2" type="github"><diagram id="9cs4c3GnhlsiEJ2v5g9I" name="Page-1">7VjbUuM4EP2aFDMPoRKbBHgkFxhql2ULdnbhUbHbsQpZ8shyEubrt1uWb7kAUzuTMFNbRYjVaUmnu49Py+7442R1pVka36gQRMfrhauOP+l4Xr836OMXWZ4Ly+B0WBjmmofOqTbc869QznTWnIeQtRyNUsLwtG0MlJQQmJaNaa2WbbdIifauKZvDhuE+YGLT+g8PTVxYz7zT2v4J+Dwud+4Pz4tfElY6u0iymIVq2TD5044/1kqZ4ipZjUFQ8sq8FPMud/xaAdMgzVsmPEfjh/gL+5upydNnlnqf1e+mW8axYCJ3EXe8ocAFRylhNs8uEcMvOQEdJUzPuez4F710VQ27RqVoOrEmAyvTZYLPyStAcKDRWq+AV3P3bfeZlYaxYFmGm3bxcwMyLx0wpNn6JLSl67ZYE+KSQeV2/d07f0uEAiJThbhtyRGlWnLDMXSE4PWWHAmAJKQiaYi4EBDidcwyMquIbgqexUAhMxlaNx7Q8D2HmICJFYFlIf3/wA0kHWLeyKK3t6d1o/rZYD++FNCPw6chUQtoQOQyKHNMQqBV0sa5HabXAugtQBuO6nBR8HtiiT9ybJ8UCEe4r46Evdep7GiJlDRO2/qeG1+yhAtSxU8gFkCrUoFNIsip2ps2hNXOW75fCQkqMCiMXj+ji5swKFXUie/QDZe1knlnzhY3VWzgjMyp57xauhYYvHAa8y16c/Y+9WYcQ/CkcvNza85+7rOTntIh6FSwwCqaXbIXMZG9COHwqaq0wUK3QbjyG/ZkdfgeBB4iuJLZcRCrQo0LcR6yhO50OcvSVyjxHWEHMZNziyEzzORZqa5HJfa1GhidwzF+T5SdJJU5EHAmSP4KfFzOXRvMAE9phNbBH1s9VnPNrBTnGcLtzcCKd1fn8jCNIwMZIs7IUUNJ2y9eyDj1GMCjpt4TXk7QOOWKU5WxGxUnixlESsNHF0JWHIrJlxSSNJdTEcySC04kYinfW4LXSejj3930Znozmt7hPlfXf11f/XF7N8Xry1uy/DZ9/AX7cd9r92N/8NaGfPrDGvL5+2zI1zQtYkGzpfyMHfkQ6jsTTD7VjxrYsI9cNzt635mrNHjBYZm0HwH32gHsKQAfG7IPeVb0r+vbAz3HUCrqs0i3eJARebi1KdExYcch7JcSzsM/yPj9Lbq5lmPswhf0CgpHKgXM6wgtlzaRNjE4auaykTKtchkC7d+zfoj4oZqEg0f65XhQDierpufkuRytuHloXDdm4aieRINyThEEhBtvxdZKhYGqXAfwhndLBmkP5tUetFn8RnX7ZcU1CGb4oo1uW3Xdcn8qLk1NJN9vE6liTblEEZWb1XybtrbQyfkrCxVRbyxkyVbF+B/45+2RfyWPKu48livs5FHF2QZNH1ss3c7Z78m/87fy7+x//tX8w2H9Urpwr1/t+9N/AQ==</diagram></mxfile>
+<mxfile host="65bd71144e">
+    <diagram id="9cs4c3GnhlsiEJ2v5g9I" name="Page-1">
+        <mxGraphModel dx="1758" dy="618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="yfCXhqaVaoDkUap2UoLt-27" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Class - Menu&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ initialize (no arg)&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;@menu is a prefilled hash of dishes and prices&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ method add (item +price to menu hash)&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ method remove (item inc price from menu hash&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="60" width="280" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="yfCXhqaVaoDkUap2UoLt-28" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Class - Checkout&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ initialize(1 arg, Ordering instance)&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;@orderplaced = false&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;@orderconf&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;@time = time.now&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ method placeorder - takes Selections.choices and&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;puts in @orderconf, changes status to 'order placed&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&amp;nbsp;= true. Does not&amp;nbsp;&lt;span&gt;allow placing a second order&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ method viewconf. Shows receipt of what ordered&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;span&gt;+ method sendconf - once order placed = true (error&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;if it is called before) sends conf text via twilio api&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="350" width="280" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="yfCXhqaVaoDkUap2UoLt-29" value="&lt;p style=&quot;margin: 0px ; margin-top: 4px ; text-align: center&quot;&gt;&lt;b&gt;Class - Ordering&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ initialize (1 arg, Menu instance)&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;@'choices'&amp;nbsp; = blank hash&lt;/p&gt;&amp;nbsp;&lt;span&gt;@menuhash = MenuInstance&lt;/span&gt;&lt;br&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ method interface(Kernel), all terminal messages&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ method viewmenu&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ method selectitems&lt;/p&gt;&lt;p style=&quot;margin: 0px ; margin-left: 4px&quot;&gt;+ method viewchoices&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="60" width="280" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="yfCXhqaVaoDkUap2UoLt-31" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1.012;entryY=0.344;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="yfCXhqaVaoDkUap2UoLt-27" target="yfCXhqaVaoDkUap2UoLt-29" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="330" y="280" as="sourcePoint"/>
+                        <mxPoint x="490" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="yfCXhqaVaoDkUap2UoLt-32" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="yfCXhqaVaoDkUap2UoLt-29" target="yfCXhqaVaoDkUap2UoLt-28" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="330" y="280" as="sourcePoint"/>
+                        <mxPoint x="490" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="API key .text file" style="html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-30" y="440" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div&gt;puts Welcome to takeaway app. &lt;/div&gt;&lt;div&gt;    IN LOOP 1&lt;/div&gt;&lt;div&gt;    puts What would you like to do? (see menu, see basket, select item, checkout)&lt;/div&gt;&lt;div&gt;    input1 = gets.chomp&lt;/div&gt;&lt;div&gt;    puts menu if menu&lt;/div&gt;&lt;div&gt;    puts basket if basket (show error message if blank)&lt;/div&gt;&lt;div&gt;    puts thanks for ordering if checkout and break/call new class instance/method&lt;/div&gt;&lt;div&gt;    &lt;/div&gt;&lt;div&gt;    IN LOOP 2&lt;/div&gt;&lt;div&gt;    puts &quot;which item do you want to add? type back once done&quot; if select item&lt;/div&gt;&lt;div&gt;    input2 = gets.chomp&lt;/div&gt;&lt;div&gt;    how many of them would you like?&lt;/div&gt;&lt;div&gt;    input3 = gets.chomp&lt;/div&gt;&lt;div&gt;       hash &amp;gt;&amp;gt; input2 + input3&lt;/div&gt;&lt;div&gt;reset inputs2+3&lt;/div&gt;&lt;div&gt;    END LOOP 2&lt;/div&gt;reset input1&lt;br&gt;&lt;div&gt;    END LOOP 1&lt;/div&gt;&lt;/div&gt;" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="260" width="570" height="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="endArrow=open;endFill=1;endSize=12;html=1;entryX=-0.004;entryY=0.671;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="yfCXhqaVaoDkUap2UoLt-28">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-70" y="480" as="sourcePoint"/>
+                        <mxPoint x="90" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="yfCXhqaVaoDkUap2UoLt-29">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="530" y="360" as="sourcePoint"/>
+                        <mxPoint x="410" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
