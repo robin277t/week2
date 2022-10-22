@@ -1,11 +1,9 @@
 class Menu
+    
+    attr_accessor :menu
+    
     def initialize
-        attr_accessor :menu = {"Wine" => "£12", "Bread" => "£5", "Beans" => "£6"}
-    end
-
-    #remove the below function
-    def showmenu
-        @menu
+         @menu = {"Wine" => "£12", "Bread" => "£5", "Beans" => "£6"}
     end
 
     def add(item,price)

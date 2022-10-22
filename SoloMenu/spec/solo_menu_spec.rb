@@ -13,7 +13,7 @@ RSpec.describe Menu do
     it "1 - DOUB Add method to menu works" do
         exmenu = Menu.new
         orderapp = double :menu
-        allow(orderapp).to receive(:viewmenu).and_return(exmenu.showmenu)
+        allow(orderapp).to receive(:viewmenu).and_return(exmenu.menu)
         exmenu.add("Cheese","£10")
         expect(orderapp.viewmenu).to eq ({"Wine" => "£12", "Bread" => "£5", "Beans" => "£6", "Cheese" => "£10"})
     end
@@ -28,7 +28,7 @@ RSpec.describe Menu do
     it "2 - DOUB Remove method to menu works" do
         exmenu = Menu.new
         orderapp = double :menu
-        allow(orderapp).to receive(:viewmenu).and_return(exmenu.showmenu)
+        allow(orderapp).to receive(:viewmenu).and_return(exmenu.menu)
         exmenu.remove("Wine")
         expect(orderapp.viewmenu).to eq ({"Bread" => "£5", "Beans" => "£6"})
     end

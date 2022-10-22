@@ -1,18 +1,9 @@
 class Checkout
-
+    attr_accessor :orderconf
+    attr_accessor :orderplaced
     def initialize(order) #order is an instance of Ordering
-        attr_accessor :orderconf = order.choicesmade # if choicesmade removed do the join here?
-        attr_accessor :orderplaced = false
-    end
-
-    #remove below?
-    def viewconf
-        @orderconf
-    end
-
-    #remove below?
-    def viewstatus
-        @orderplaced
+        @orderconf = order.choices.join(", ")
+        @orderplaced = false
     end
 
     def placeorder

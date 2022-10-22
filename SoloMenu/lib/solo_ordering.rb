@@ -1,5 +1,5 @@
 class Ordering
-
+    attr_accessor :choices
     def initialize(menuinstance) #menuinstance is an instance of Menu
         @menuinstance = menuinstance
         @choices = []
@@ -14,13 +14,8 @@ class Ordering
         @choices.push(selection)
     end
 
-    # maybe remove the below?
-    def choicesmade
-        @choices.join(", ")
-    end
-
     def viewmenu
-        @menuinstance.showmenu
+        @menuinstance.menu
     end
 
 

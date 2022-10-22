@@ -9,14 +9,14 @@ RSpec.describe Checkout do
         orderapp = Ordering.new(exmenu)
         orderapp.selectitems(orderapp.interfacing)
         check1 = Checkout.new(orderapp)
-        expect(check1.viewconf).to eq "2x Wine £24"
+        expect(check1.orderconf).to eq "2x Wine £24"
     end
 
     it "3 - DOUB placeorder shows orderconf correctly" do
         exmenu = double :menu
-        orderapp = double :orders, choicesmade: "2x Wine £24"      
+        orderapp = double :orders, choices: ["2x Wine £24"]      
         check1 = Checkout.new(orderapp)
-        expect(check1.viewconf).to eq "2x Wine £24"
+        expect(check1.orderconf).to eq "2x Wine £24"
     end
 
     it "4 - INT shows orderplaced status correctly as false" do
@@ -24,14 +24,14 @@ RSpec.describe Checkout do
         orderapp = Ordering.new(exmenu)
         orderapp.selectitems(orderapp.interfacing)
         check1 = Checkout.new(orderapp)
-        expect(check1.viewstatus).to eq false
+        expect(check1.orderplaced).to eq false
     end 
 
     it "4 - DOUB shows orderplaced status correctly as false" do
         exmenu = double :menu
-        orderapp = double :orders, choicesmade: "2x Wine £24"      
+        orderapp = double :orders, choices: ["2x Wine £24"]      
         check1 = Checkout.new(orderapp)
-        expect(check1.viewstatus).to eq false
+        expect(check1.orderplaced).to eq false
     end 
 
     it "5 - INT shows orderplaced status correctly as true" do
@@ -40,15 +40,15 @@ RSpec.describe Checkout do
         orderapp.selectitems(orderapp.interfacing)
         check1 = Checkout.new(orderapp)
         check1.placeorder
-        expect(check1.viewstatus).to eq true
+        expect(check1.orderplaced).to eq true
     end 
 
     it "5 - DOUB shows orderplaced status correctly as true" do
         exmenu = double :menu
-        orderapp = double :orders, choicesmade: "2x Wine £24"      
+        orderapp = double :orders, choices: ["2x Wine £24"]      
         check1 = Checkout.new(orderapp)
         check1.placeorder
-        expect(check1.viewstatus).to eq true
+        expect(check1.orderplaced).to eq true
     end 
 
     it "6 - UNIT sendconf returns error if order not placed" do
