@@ -43,13 +43,15 @@ TESTS:
     Ordering class
     11. viewchoices (Unit) shows @choices as a blank when nothing input
     12. viewmenu (Int + Doub) shows @menuhash
-    x13. selectitems (Int + Doub) shows @choices populated with 1 items use viewchoices
+    13. selectitems (Int + Doub) shows @choices populated with 1 items use viewchoices
+    GOT TO HERE
+    8. viewconf (Int + Doub) shows receipt of what ordered
+    9. viewconf (Unit) returns error if not placed
     14. selectitems (Int + Doub) shows @choices populated with 2 items use viewchoices
     15. interface (Int + Doub) give messages to and show calls methods correctly, 1: selectitem x2 and viewchoices
     16. interface (Int + Doub) give messages to and show calls methods correctly, 2: viewmenu
     17. interface (Int + Doub) give messages to and show calls methods correctly, 3: Checkout.placeorder works
-    8. viewconf (Int + Doub) shows receipt of what ordered (
-    9. viewconf (Unit) returns error if not placed
+
 
 
 

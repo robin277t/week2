@@ -1,8 +1,8 @@
 class Checkout
     attr_accessor :orderconf
     attr_accessor :orderplaced
-    def initialize(order) #order is an instance of Ordering
-        @orderconf = order.choices.join(", ")
+    def initialize
+        @orderconf = ""
         @orderplaced = false
     end
 
@@ -12,6 +12,10 @@ class Checkout
 
     def sendconf
         fail "no order placed" unless @orderplaced == true 
+    end
+
+    def viewconf
+        #is this needed or just do a view of @orderconf?
     end
 
 end
