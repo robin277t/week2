@@ -11,11 +11,8 @@ class Checkout
     end
 
     def sendconf
-        fail "no order placed" unless @orderplaced == true 
-    end
-
-    def viewconf
-        #is this needed or just do a view of @orderconf?
+        fail "no order placed" unless @orderplaced == true
+        #API link and code in here 
     end
 
 end

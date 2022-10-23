@@ -1,34 +1,19 @@
-#From interface, a matching string of the KEY of the menu hash
-#From interface, a temp variable that is the count number of the ordered item.
-#From interface, menu VALUE * by temp variable above ADDED to @total
-
-#Take item that matches from menu hash and push name and temp variable of count
-# into 'choices' array
-
-
-
 class Ordering
     attr_accessor :choices
     attr_accessor :total
-    attr_accessor :dish #can be hidden later once tests changed
-    attr_accessor :dishcount #can be hidden later once tests changed
+
     def initialize(menuinstance,checkout) #menuinstance is an instance of Menu
         @menuinstance = menuinstance
         @checkoutinstance = checkout
         @choices = []
         @total = 0
-        #@io = Kernel
     end
 
     def interfacing
-        @dish = "Wine"
-        @dishcount = 4
-        input1 = ""
-        input2 = ""
-        input3 = ""
+        input1, input2, input3 = ""
         puts "Welcome to takeaway app."
-        while input1 != "checkout" do
-            puts "What would you like to do? (see menu, see basket, 'select items', 'checkout')"
+        while input1 != "checkout" || viewchoices == ", total = £0" do 
+            puts "What would you like to do? (see menu, see basket, select items, checkout, exit)"
             input1 = gets.chomp
             if input1 == "see menu" 
                 @menuinstance.menu.map{|item, price| puts "#{item} - £#{price}"}
@@ -42,12 +27,19 @@ class Ordering
                 while input2 != "back"
                 puts "please enter the name of the dish you wish to order, type 'back' to finish adding"
                 input2 = gets.chomp
-                #check on incorrect string here
                 break if input2 == "back"
+                if !@menuinstance.menu.include? input2
+                    puts "not included, please re-enter"
+                    next
+                end 
                 puts "how many of these would you like?"
                 input3 = gets.chomp.to_i
                 selectitems(input2, input3)
                 end
+            elsif input1 == "exit"
+                exit
+            elsif input1 == "checkout" && viewchoices == ", total = £0"
+                puts "Can't checkout, basket is empty - select another option"
             end
         end
         @checkoutinstance.placeorder
