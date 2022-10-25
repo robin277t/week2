@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="9cs4c3GnhlsiEJ2v5g9I" name="Page-1">
-        <mxGraphModel dx="1453" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2067" dy="962" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -28,8 +28,8 @@
                 <mxCell id="2" value="API key .text file" style="html=1;" parent="1" vertex="1">
                     <mxGeometry x="-30" y="440" width="110" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div&gt;puts Welcome to takeaway app. &lt;/div&gt;&lt;div&gt;    IN LOOP 1&lt;/div&gt;&lt;div&gt;    puts What would you like to do? (see menu, see basket, select item, checkout)&lt;/div&gt;&lt;div&gt;    input1 = gets.chomp&lt;/div&gt;&lt;div&gt;    puts menu if menu&lt;/div&gt;&lt;div&gt;    puts basket if basket (show error message if blank)&lt;/div&gt;&lt;div&gt;    puts thanks for ordering if checkout and break/call new class instance/method&lt;/div&gt;&lt;div&gt;    &lt;/div&gt;&lt;div&gt;    IN LOOP 2&lt;/div&gt;&lt;div&gt;    puts &quot;which item do you want to add? type back once done&quot; if select item&lt;/div&gt;&lt;div&gt;    input2 = gets.chomp&lt;/div&gt;&lt;div&gt;    how many of them would you like?&lt;/div&gt;&lt;div&gt;    input3 = gets.chomp&lt;/div&gt;&lt;div&gt;       hash &amp;gt;&amp;gt; input2 + input3 plus sum of pound values&lt;/div&gt;&lt;div&gt;reset inputs2+3&lt;/div&gt;&lt;div&gt;    END LOOP 2&lt;/div&gt;reset input1&lt;br&gt;&lt;div&gt;    END LOOP 1&lt;/div&gt;&lt;/div&gt;" style="html=1;" parent="1" vertex="1">
-                    <mxGeometry x="520" y="260" width="570" height="420" as="geometry"/>
+                <mxCell id="4" value="&lt;div style=&quot;background-color: rgb(255 , 255 , 255) ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; line-height: 18px&quot;&gt;&lt;div&gt;INTERFACING METHOD BASIC DESIGN&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;puts Welcome to takeaway app. &lt;/div&gt;&lt;div&gt;    IN LOOP 1&lt;/div&gt;&lt;div&gt;    puts What would you like to do? (see menu, see basket, select item, checkout)&lt;/div&gt;&lt;div&gt;    input1 = gets.chomp&lt;/div&gt;&lt;div&gt;    puts menu if menu&lt;/div&gt;&lt;div&gt;    puts basket if basket (show error message if blank)&lt;/div&gt;&lt;div&gt;    puts thanks for ordering if checkout and break/call new class instance/method&lt;/div&gt;&lt;div&gt;    &lt;/div&gt;&lt;div&gt;    IN LOOP 2&lt;/div&gt;&lt;div&gt;    puts &quot;which item do you want to add? type back once done&quot; if select item&lt;/div&gt;&lt;div&gt;    input2 = gets.chomp&lt;/div&gt;&lt;div&gt;    how many of them would you like?&lt;/div&gt;&lt;div&gt;    input3 = gets.chomp&lt;/div&gt;&lt;div&gt;       hash &amp;gt;&amp;gt; input2 + input3 plus sum of pound values&lt;/div&gt;&lt;div&gt;reset inputs2+3&lt;/div&gt;&lt;div&gt;    END LOOP 2&lt;/div&gt;reset input1&lt;br&gt;&lt;div&gt;    END LOOP 1&lt;/div&gt;&lt;/div&gt;" style="html=1;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="255" width="570" height="420" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" value="" style="endArrow=open;endFill=1;endSize=12;html=1;entryX=-0.004;entryY=0.671;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="2" target="yfCXhqaVaoDkUap2UoLt-28" edge="1">
                     <mxGeometry width="160" relative="1" as="geometry">
@@ -42,6 +42,24 @@
                         <mxPoint x="530" y="360" as="sourcePoint"/>
                         <mxPoint x="410" y="220" as="targetPoint"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="Drive by seperate 'run' program&lt;br&gt;which creates class instances and&lt;br&gt;calls interfacing method, returning&lt;br&gt;expected info to customer" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-320" y="90" width="280" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="endArrow=open;endFill=1;endSize=12;html=1;exitX=0.572;exitY=-0.003;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.572;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="yfCXhqaVaoDkUap2UoLt-28" target="yfCXhqaVaoDkUap2UoLt-29">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="260" y="220" as="sourcePoint"/>
+                        <mxPoint x="420" y="220" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="280" y="300"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="" style="shape=providedRequiredInterface;html=1;verticalLabelPosition=bottom;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="-70" y="160" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

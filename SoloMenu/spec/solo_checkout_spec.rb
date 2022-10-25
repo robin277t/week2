@@ -10,61 +10,42 @@ RSpec.describe Checkout do
 
     it "3 - INT placeorder shows orderconf correctly" do
         exmenu = Menu.new
-        check1 = Checkout.new
-        orderapp = Ordering.new(exmenu,check1)
+        orderapp = Ordering.new(exmenu,Kernel)
+        check1 = Checkout.new("4x Wine, total = £48")
         orderapp.selectitems("Wine", 4)
-        check1.orderconf = orderapp.viewchoices
         expect(check1.orderconf).to eq "4x Wine, total = £48"
     end
 
     it "3 - DOUB placeorder shows orderconf correctly" do
         exmenu = double :menu
         orderapp = double :orders, viewchoices: "4x Wine, total = £48"      
-        check1 = Checkout.new
-        check1.orderconf = orderapp.viewchoices
+        check1 = Checkout.new("4x Wine, total = £48")
         expect(check1.orderconf).to eq "4x Wine, total = £48"
     end
 
     it "4 - INT shows orderplaced status correctly as false" do
         exmenu = Menu.new
-        check1 = Checkout.new
-        orderapp = Ordering.new(exmenu,check1)
+        orderapp = Ordering.new(exmenu,Kernel)
+        check1 = Checkout.new("4x Wine, total = £48")
         orderapp.selectitems("Wine", 4)
-        check1 = Checkout.new
         expect(check1.orderplaced).to eq false
     end 
 
     it "4 - DOUB shows orderplaced status correctly as false" do
         exmenu = double :menu
-        check1 = Checkout.new
+        check1 = Checkout.new("")
         orderapp = double :orders, viewchoices: "4x Wine, total = £48"      
         expect(check1.orderplaced).to eq false
     end 
 
-    it "5 - INT shows orderplaced status correctly as true" do
-        exmenu = Menu.new
-        check1 = Checkout.new
-        orderapp = Ordering.new(exmenu,check1)
-        orderapp.selectitems("Wine", 4)
-       
-        check1.placeorder
-        expect(check1.orderplaced).to eq true
-    end 
-
-    it "5 - DOUB shows orderplaced status correctly as true" do
-        exmenu = double :menu
-        orderapp = double :orders, choices: ["2x Wine £24"]      
-        check1 = Checkout.new
+    it "5 - UNIT shows orderplaced status correctly as true" do
+        check1 = Checkout.new("")
         check1.placeorder
         expect(check1.orderplaced).to eq true
     end 
 
     it "6 - UNIT sendconf returns error if order not placed" do
-        exmenu = Menu.new
-        check1 = Checkout.new
-        orderapp = Ordering.new(exmenu,check1)
-        orderapp.selectitems("Wine", 4)
-        
+        check1 = Checkout.new("")
         expect{check1.sendconf}.to raise_error ("no order placed")
     end
 
@@ -75,4 +56,39 @@ RSpec.describe Checkout do
     xit "7 - DOUB sendconf sends a twilio text correctly" do
         
     end
+
+    it "8 - INT @orderconf shows receipt of what ordered blank" do
+        exmenu = Menu.new
+        check1 = Checkout.new("")
+        orderapp = Ordering.new(exmenu,Kernel)
+        orderapp.selectitems("Wine", 4)
+        expect(check1.orderconf).to eq ("")
+    end
+
+    it "8 - DOUB @orderconf shows receipt of what ordered blank" do
+        exmenu = double :menu
+        orderapp = double :ordering, viewchoices: "Wine, 4"
+        check1 = Checkout.new("")
+        expect(check1.orderconf).to eq ("")
+    end
+
+   it "9 - INT @orderconf shows receipt of what ordered" do
+        exmenu = Menu.new
+        orderapp = Ordering.new(exmenu,Kernel)
+        orderapp.choices = [{"Wine" => 1}]
+        orderapp.total = 12
+        orderapp.viewchoices
+        check1 = Checkout.new(orderapp.viewchoices)
+        check1.orderplaced = true
+        expect(check1.orderconf).to eq ("1x Wine, total = £12")
+    end
+
+    it "9 - DOUB @orderconf shows receipt of what ordered" do
+        exmenu = double :menu
+        orderapp = double :ordering, viewchoices: "4x Wine, total = £48"
+        check1 = Checkout.new(orderapp.viewchoices)
+        check1.orderplaced = true
+        expect(check1.orderconf).to eq ("4x Wine, total = £48")
+    end
+
 end

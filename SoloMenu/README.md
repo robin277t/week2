@@ -38,19 +38,20 @@ TESTS:
     4. placeorder (Int + Doub) shows orderplaced status correctly false
     5. placeorder (Int + Doub) shows orderplaced status correctly true
     6. sendconf (Unit) returns error if order not placed
-   TODO 7. sendconf (Int + Doub) sends text with correct body
+    8. orderconf (Int + Doub) shows blank receipt of what ordered if checkout not activated
+    9. orderconf (Int + Doub) shows correct receipt of what ordered if checkout activated
+    TODO 7. sendconf (Int + Doub) sends text with correct body
+    
 
     Ordering class
     11. viewchoices (Unit) shows @choices as a blank when nothing input
     12. viewmenu (Int + Doub) shows @menuhash
     13. selectitems (Int + Doub) shows @choices populated with 1 items use viewchoices
-    GOT TO HERE
-    8. viewconf (Int + Doub) shows receipt of what ordered
-    9. viewconf (Unit) returns error if not placed
     14. selectitems (Int + Doub) shows @choices populated with 2 items use viewchoices
-    15. interface (Int + Doub) give messages to and show calls methods correctly, 1: selectitem x2 and viewchoices
-    16. interface (Int + Doub) give messages to and show calls methods correctly, 2: viewmenu
-    17. interface (Int + Doub) give messages to and show calls methods correctly, 3: Checkout.placeorder works
+    
+    15. interface (Doub) give messages to and show calls methods correctly, 1: see menu + exit
+    16. interface (Doub) give messages to and show calls methods correctly, selectitem x2 and see basket + checkout
+    17. interface (Doub) give messages to and show calls methods correctly, selectitem x1 incorrect, view empty basket, checkout fail, exit
 
 
 
