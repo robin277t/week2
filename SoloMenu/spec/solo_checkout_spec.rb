@@ -46,16 +46,21 @@ RSpec.describe Checkout do
 
     it "6 - UNIT sendconf returns error if order not placed" do
         check1 = Checkout.new("")
-        expect{check1.sendconf}.to raise_error ("no order placed")
+        expect{check1.sendconf("dummy.txt")}.to raise_error ("no order placed")
     end
 
-    xit "7 - INT sendconf sends a twilio text correctly" do
-
+    it "7 - INT sendconf sends a twilio text correctly" do 
+        check1 = Checkout.new("")
+        check1.placeorder
+        expect(check1.sendconf("./lib/Twiliokeys.txt")).to eq ("text sent")
     end
 
-    xit "7 - DOUB sendconf sends a twilio text correctly" do
-        
-    end
+    # it "7 - DOUB sendconf sends a twilio text correctly" do #HOW DO I DOUBLE OR STUB THIS WHEN THE METHOD SENDS A TEXT?
+    #     check1 = Checkout.new("")
+    #     twiliodouble = double :twilio
+    #     check1.placeorder
+    #     #expect(check1.sendconf("dummy.txt")).to eq ("text sent")
+    # end
 
     it "8 - INT @orderconf shows receipt of what ordered blank" do
         exmenu = Menu.new
